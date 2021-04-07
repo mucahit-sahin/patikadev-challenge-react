@@ -1,0 +1,49 @@
+@import "../../styles/colors.scss";
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login {
+    background-color: $orange;
+    padding: 2rem;
+    border-radius: 1rem;
+    .inputRow {
+      position: relative;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      &.active label {
+        transform: translateY(0) scale(0.75);
+      }
+      input {
+        background-color: transparent;
+        transition: 0.4s;
+        font-size: 1rem;
+        outline: none;
+        padding: 1.4rem 0px 0.2rem 0px;
+        &:focus + label {
+          transform: translateY(0) scale(0.75);
+        }
+      }
+      label {
+        position: absolute;
+        font-size: 1.2rem;
+        transition: 0.4s;
+        transform-origin: top left;
+        transform: translateY(1rem) scale(1);
+      }
+    }
+    .loginBt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.5rem;
+      background-color: $button-color;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+}

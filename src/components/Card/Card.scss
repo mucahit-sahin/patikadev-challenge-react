@@ -1,0 +1,118 @@
+@import "../../styles/colors.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: 3px solid #242424;
+  border-radius: 1rem;
+  position: relative;
+  &:hover .settings {
+    margin: -0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#ffffff, 0.5);
+    button {
+      background-color: $button-color;
+      color: white;
+      border-radius: 20%;
+      padding: 1rem;
+      &:last-child {
+        background-color: red;
+      }
+    }
+  }
+  .settings {
+    display: none;
+  }
+  .deleteBt {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: min-content;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    svg {
+      stroke: white;
+    }
+  }
+  .saveBt {
+    width: 100%;
+    background-color: $button-color;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 600;
+    padding: 0.3rem;
+    margin-top: 1rem;
+  }
+  .createTitle {
+    margin-top: 0.5rem;
+    display: flex;
+    width: 100%;
+    input {
+      font-size: 1rem;
+      width: inherit;
+    }
+  }
+  .addItemInput {
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    input {
+      flex: 0.9;
+      font-size: 1rem;
+    }
+    button {
+      flex: 0.1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      border-radius: 50%;
+      background-color: $button-color;
+      color: white;
+    }
+  }
+  .items {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .item {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 1rem;
+      }
+      button {
+        display: flex;
+        margin: 0px 0px 0px auto;
+        padding: 3px;
+        font-size: 0.7rem;
+        background-color: red;
+        border: 1px solid black;
+      }
+    }
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .checkboxs {
+    display: flex;
+    flex-direction: column;
+    .checkbox {
+      font-size: 1rem;
+    }
+  }
+}

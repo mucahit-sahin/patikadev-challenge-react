@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+.create {
+  display: flex;
+  flex-direction: column;
+  background-color: $orange;
+  border-radius: 1rem;
+  .title {
+    margin: 1rem 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .categoryInput {
+    margin: auto 0.5rem 0;
+    input {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  button {
+    padding: 0.5rem;
+    margin: 1rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $button-color;
+    color: white;
+    font-size: 1rem;
+  }
+}
