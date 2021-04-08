@@ -1,23 +1,32 @@
 const initialState = [
   {
     id: 1,
-    title: "1",
+    title: "Todo 1",
     categoryId: 1,
-    items: ["fdds", "dgds"],
+    items: [
+      { id: 1, item: "item1", completed: true },
+      { id: 2, item: "item2", completed: false },
+    ],
     editMode: false,
   },
   {
     id: 2,
-    title: "111",
+    title: "Todo 2",
     categoryId: 1,
-    items: ["fdfds", "ddsfgds"],
+    items: [
+      { id: 1, item: "item1", completed: true },
+      { id: 2, item: "item2", completed: false },
+    ],
     editMode: false,
   },
   {
     id: 3,
-    title: "11441",
+    title: "Todo 3",
     categoryId: 2,
-    items: ["fds", "ddfsgds"],
+    items: [
+      { id: 1, item: "item1", completed: true },
+      { id: 2, item: "item2", completed: false },
+    ],
     editMode: false,
   },
 ];

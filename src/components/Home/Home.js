@@ -35,7 +35,6 @@ const Home = () => {
 
   React.useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
-    renderCards();
   }, []);
 
   React.useEffect(() => {
@@ -47,7 +46,7 @@ const Home = () => {
       <div className="profileCol">
         <div className="header">
           <img
-            src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg"
+            src="https://image.flaticon.com/icons/png/512/64/64495.png"
             alt="profile"
           />
           <span>{user.name}</span>
@@ -70,9 +69,12 @@ const Home = () => {
         </div>
       </div>
       <div className="todoListCol">
-        {filterCards.map((card) => (
-          <Card key={card.id} card={card} />
-        ))}
+        {filterCards.map((card) => {
+          let category = categories.find(
+            (category) => category.id === card.categoryId
+          );
+          return <Card key={card.id} card={card} category={category} />;
+        })}
         <CreateCard />
       </div>
     </div>

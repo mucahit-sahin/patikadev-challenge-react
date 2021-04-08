@@ -1,6 +1,6 @@
 const initialState = [
-  { id: 1, name: "All", active: true },
-  { id: 2, name: "caa", active: true },
+  { id: 1, name: "Category 1", active: true },
+  { id: 2, name: "Category 2", active: true },
 ];
 function categoryReducer(state = initialState, action) {
   switch (action.type) {

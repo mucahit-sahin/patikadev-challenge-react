@@ -19,6 +19,7 @@ const CreateCard = () => {
         dispatch(addCategory(id, category, true));
         dispatch(addCard(uuidv4(), "", [], id));
       }
+      setCategory("");
     }
   };
   return (

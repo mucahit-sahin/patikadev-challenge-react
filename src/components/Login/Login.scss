@@ -20,8 +20,9 @@
         background-color: transparent;
         transition: 0.4s;
         font-size: 1rem;
-        outline: none;
-        padding: 1.4rem 0px 0.2rem 0px;
+        border: 1px solid gray;
+        border-radius: 1rem;
+        padding: 1.4rem 0.5rem 0.2rem;
         &:focus + label {
           transform: translateY(0) scale(0.75);
         }
@@ -32,6 +33,7 @@
         transition: 0.4s;
         transform-origin: top left;
         transform: translateY(1rem) scale(1);
+        padding: 0px 0.5rem;
       }
     }
     .loginBt {
